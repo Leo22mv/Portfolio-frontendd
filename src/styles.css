@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+.editbtn {
+    visibility: hidden;
+    cursor: pointer;
+}
+.editbtn2 {
+    visibility: hidden;
+    margin-left: 100%;
+    cursor: pointer;
+}
+.inpnombre {
+    display: none;
+    cursor: pointer;
+}
+#tilnombre {
+    display: none;
+    cursor: pointer;
+}
+.tilde {
+    margin-left: 10px;
+}
+#logo {
+    margin-bottom: 5px;
+}
+#banner {
+    margin: 80px 0 20px 0;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-image: url("assets/img/PortadaEditada.png");
+    background-size: 80%;
+    height: 400px;
+    padding: 14% 0 0 1%;
+}
+#editban {
+    margin: 80px 0 0 100%;
+}
+#info {
+    /* position: absolute; */
+    /* top: 25px; */
+    /* bottom: 100%; */
+    /* left: 1%; */
+    border-radius: 100px;
+}
+#fotoperfil {
+    border-radius: 100px;
+    /* max-width: 340px; */
+    /* border-bottom-left-radius: 100px; */
+}
+.card-header {
+    background-color: #018786;
+    color: white;
+}
+.formlogin {
+    margin-top: 75px;
+    width: 25%;
+    display: none;
+}
+#sobremi {
+    margin-bottom: 30px;
+}
+.card {
+    margin-bottom: 30px;
+}

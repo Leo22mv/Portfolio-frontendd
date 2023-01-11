@@ -28,6 +28,7 @@
     border: 2px solid black;
     background-image: url("assets/img/PortadaEditada.png");
     background-size: 80%;
+    background-position: 35%;
     height: 400px;
     padding: 14% 0 0 1%;
 }
@@ -51,13 +52,26 @@
     color: white;
 }
 .formlogin {
+    /* display: none; */
     margin-top: 75px;
     width: 25%;
-    display: none;
 }
 #sobremi {
     margin-bottom: 30px;
 }
 .card {
     margin-bottom: 30px;
+}
+#html {
+    background-image: url("assets/img/90.png");
+    background-size: 100%;
+    background-position: 0 30%;
+    background-repeat: no-repeat;
+}
+.skill {
+    border: 1px solid black;
+    width: 10%;
+    height: 20%;
+    margin: 55% 0 0 36%;
+    
 }

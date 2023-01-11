@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 import { PortfolioService } from 'src/app/portfolio.service';
 
 @Component({
@@ -8,12 +8,33 @@ import { PortfolioService } from 'src/app/portfolio.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('formlogin') formularioLogin!: ElementRef;
+
+  // @Output() btnClick = new EventEmitter()
+
+  loginVisible: boolean = false;
+
+  constructor(private renderer2: Renderer2) {}
 
   ngOnInit(): void {
   }
-  public abrirLogin() {
-    const login = document.getElementsByClassName("formlogin");
-    // login.style.display = "flex";
+
+  // mostrarLogin: boolean = false;
+
+  // public abrirLogin() {
+  //   this.mostrarLogin = true;
+  // }
+
+  onClick() {
+    const formloginn = this.formularioLogin.nativeElement;
+    if (this.loginVisible==true) {
+      this.renderer2.setStyle(formloginn, "display", "none");
+      this.loginVisible = false;
+    } else {
+      this.renderer2.setStyle(formloginn, "display", "inline");
+      this.loginVisible = true;
+    }
+    console.log("funca");
+
   }
 }
